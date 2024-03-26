@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/plantillaCirugia :: head">
+    <style>
+        /* Estilos personalizados para la imagen de fondo */
+        body {
+            background-image: url('https://facultades.unab.cl/cienciasdelavida/wp-content/uploads/2022/02/AdobeStock_107432576-scaled.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        /* Estilos personalizados para las tarjetas */
+        .card {
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease-in-out;
+            width: 300px; /* Ancho personalizado */
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        /* Estilos personalizados para el botón del carrusel */
+        .carousel-control-prev, .carousel-control-next {
+            background-color: black;
+        }
+
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            filter: invert(1);
+        }
+
+        .carousel-control-prev:hover, .carousel-control-next:hover {
+            background-color: #333; /* Cambia de color al pasar el mouse sobre el botón */
+        }
+    </style>
+</head>
+<body>
+    <header th:replace="layout/plantillaCirugia :: header"></header>
+    
+    <div class="container">
+        <section>
+            <h1>Cirugía Veterinaria</h1>
+            <p>La cirugía veterinaria es una parte crucial de la atención médica para mascotas. Aquí en PetVet Clinic, nos comprometemos a proporcionar servicios quirúrgicos de la más alta calidad para ayudar a mejorar la salud y el bienestar de tus mascotas.</p>
+            <p>Nuestro equipo de cirujanos veterinarios altamente capacitados está equipado para realizar una variedad de procedimientos quirúrgicos, desde cirugías de tejidos blandos hasta procedimientos ortopédicos y de emergencia.</p>
+        </section>
+
+        <section>
+            <h2>Procedimientos Quirúrgicos Comunes</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <img src="https://facultades.unab.cl/cienciasdelavida/wp-content/uploads/2022/02/AdobeStock_107432576-scaled.jpeg" class="card-img-top" alt="Imagen 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Esterilización / Castración</h5>
+                                <p class="card-text">
+
+
+La esterilización o castración es un procedimiento común y beneficioso para las mascotas. Este proceso quirúrgico implica la eliminación de los órganos reproductivos, como los ovarios en las hembras (ovariohisterectomía) o los testículos en los machos (orquiectomía).
+
+La esterilización ayuda a controlar la población de mascotas, reduciendo el número de animales no deseados y contribuyendo a la prevención del sobrepoblamiento. Además, puede proporcionar beneficios de salud a largo plazo, como la reducción del riesgo de ciertos tipos de cáncer y enfermedades relacionadas con el sistema reproductivo.
+
+En PetVet Clinic, nuestro equipo de profesionales altamente capacitados realiza esterilizaciones con los más altos estándares de cuidado y atención. Estamos comprometidos a brindar un ambiente seguro y confortable para tu mascota durante todo el proceso quirúrgico, garantizando su bienestar y una recuperación exitosa<a href="/reservacion/listado">Reservar aquí!!!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="https://www.mascotas.com/cms/revista/Revista_6171ac32307dc_21102021.jpg" class="card-img-top" alt="Imagen 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Extracción dental</h5>
+                                <p class="card-text">La extracción dental es un procedimiento común pero importante en la atención veterinaria, especialmente cuando las mascotas experimentan problemas dentales como caries, enfermedad periodontal o dientes dañados. En PetVet Clinic, comprendemos la importancia de la salud dental en las mascotas y nos comprometemos a brindar un tratamiento dental integral y de alta calidad.
+
+Nuestro equipo de veterinarios especializados en odontología está capacitado para realizar extracciones dentales de manera segura y efectiva, asegurando el bienestar y la comodidad de tu mascota durante todo el procedimiento. Utilizamos tecnologías modernas y técnicas avanzadas para garantizar resultados óptimos y una recuperación rápida.
+
+Además de las extracciones dentales, también ofrecemos servicios de limpieza dental, tratamiento de encías y educación sobre cuidado dental en el hogar para ayudar a prevenir futuros problemas dentales. Estamos comprometidos a mantener la salud bucal de tu mascota y a brindarle una sonrisa saludable y feliz<a href="/reservacion/listado">Reservar aquí!!!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="https://www.consalud.es/animalcare/uploads/s1/24/22/00/0/dos-veterinarios-realizando-pruebas-diagnosticas-a-un-perro.jpeg" class="card-img-top" alt="Imagen 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Tratamiento de tumores</h5>
+                                <p class="card-text">El tratamiento de tumores es una parte crucial de la atención médica para mascotas que enfrentan enfermedades como el cáncer. En PetVet Clinic, entendemos lo preocupante que puede ser para los dueños de mascotas recibir un diagnóstico de tumor en su compañero peludo.
+
+Nuestro equipo de veterinarios especializados en oncología está dedicado a proporcionar el más alto nivel de cuidado y tratamiento para mascotas con tumores. Utilizamos tecnologías avanzadas de diagnóstico, como ecografías, radiografías y biopsias, para evaluar la gravedad y la naturaleza del tumor.
+
+Desde cirugías para extirpar tumores hasta tratamientos de radioterapia y quimioterapia, estamos comprometidos a diseñar planes de tratamiento personalizados que se adapten a las necesidades individuales de cada mascota. Nuestro objetivo es mejorar la calidad de vida de tu mascota y brindarte apoyo y orientación en cada paso del camino. <a href="/reservacion/listado">Para mas información Reservar aquí!!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+    </div>
+    
+  
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-GbLlfO2VlQsxiEYrXRVwq2jcIv1b8vjoXOez2nllthuFBuP6cRS/VM9VbAMINrYv" crossorigin="anonymous"></script>
+</body>
+</html>
