@@ -2,11 +2,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"       
       xmlns:th="http://www.thymeleaf.org">
-    <head th:replace="layout/plantilla :: head">
+    <head th:replace="layout/plantilla2 :: head">
     </head>
     <body>
-        <header th:replace="layout/plantilla :: header"></header>
+        <header th:replace="layout/plantilla2 :: header"></header>
         
-        <footer th:replace="layout/plantilla :: footer"></footer>
+        <section th:replace="mascotas/fragmentos :: botonesAgregar"/>
+        <section th:replace="mascotas/fragmentos :: listadoMascotas"/>  
+        <section th:replace="mascotas/fragmentos :: agregarMascota"/>
+        
+        
+        <footer th:replace="layout/plantilla2 :: footer"></footer>
     </body>
 </html>

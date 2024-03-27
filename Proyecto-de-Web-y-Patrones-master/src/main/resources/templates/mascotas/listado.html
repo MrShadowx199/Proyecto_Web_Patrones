@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"       
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="layout/plantilla2 :: head">
+    </head>
+    <body>
+        <header th:replace="layout/plantilla2 :: header"></header>
+
+        <section th:replace="mascotas/fragmentos :: botonesAgregar"/>
+        <section th:replace="mascotas/fragmentos :: listadoMascotas"/>  
+        <section th:replace="mascotas/fragmentos :: agregarMascota"/>
+        <section th:replace="mascotas/fragmentos :: filtrosBuscarPorNombre"></section> <!-- Nuevo fragmento -->
+
+
+
+        <footer th:replace="layout/plantilla2 :: footer"></footer>
+    </body>
+</html>
