@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="layout/plantilla2 :: head">
+        <style>
+
+        </style>
+    </head>
+    <body style="background-image: url('https://img.freepik.com/vector-premium/patron-lindo-cara-perro-bebe_65983-298.jpg?w=1480'); background-size: cover; background-position: center; background-repeat: no-repeat; font-family: Arial, sans-serif; color: #333;">
+
+        <header th:replace="layout/plantillaPetShop :: header"></header>
+        <section>
+            <div class="card" style="margin: 20px auto; box-shadow: 0 4px 8px rgba(0,0,0,0.2); width: 1000px; background-color: cornsilk; border-radius: 10px; padding: 20px;">
+                <h1 style="color:black;">[[#{plantilla.aseo}]]</h1>
+                <p style="color: black; font-size: 18px;">[[#{plantilla.info.grooming}]]</p>
+
+            </div>
+        </section>
+
+        <section id="grooming" class="section">
+            <div class="container">
+                <h2 class="section-title">[[#{plantilla.servicio.aseo}]]</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 400px; background-color:cornsilk; border-radius: 10px;">
+                            <img src="https://www.cobberdogking.com/blog/articles/images/dog-bath-frequency.jpg" alt="Servicio 1">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #333;">[[#{plantilla.servicio.banio}]]</h5>
+                                    <p class="card-text" style="color: #555;">[[#{plantilla.info.servicio.banio}]]<a href="/reservacion/listado" style="color: #007bff; text-decoration: none;">[[#{plantilla.reservar.aqui}]]</a></p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 400px; background-color:cornsilk; border-radius: 10px;">
+                            <img src="https://i.ebayimg.com/images/g/bXMAAOSwSPRifShP/s-l400.jpg" alt="Servicio 2">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #333;">[[#{plantilla.corte.pelo}]]</h5>
+                                    <p class="card-text" style="color: #555;">[[#{plantilla.info.corte.pelo}]]<a href="/reservacion/listado" style="color: #007bff; text-decoration: none;">[[#{plantilla.reservar.aqui}]]</a></p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 400px; background-color:cornsilk; border-radius: 10px;">
+                            <img src="https://i.ebayimg.com/images/g/BeYAAOSwqzFdn5EZ/s-l400.jpg" alt="Servicio 3">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #333;">[[#{plantilla.limpieza.orejas}]]</h5>
+                                    <p class="card-text" style="color: #555;">[[#{plantilla.info.limpieza.orejas}]]<a href="/reservacion/listado" style="color: #007bff; text-decoration: none;">[[#{plantilla.reservar.aqui}]]</a></p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 400px; background-color:cornsilk; border-radius: 10px;">
+                            <img src="https://aculi.pe/wp-content/uploads/2021/01/paticure-acu-li-pet-shop-store-cortaunas-lima-acero-inoxidable-mascotas-perros-3-400x400.jpg" alt="Servicio 4">                            
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #333;">[[#{plantilla.corte.unias}]]</h5>
+                                    <p class="card-text" style="color: #555;">[[#{plantilla.info.corte.unias}]]<a href="/reservacion/listado" style="color: #007bff; text-decoration: none;">[[#{plantilla.reservar.aqui}]]</a></p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 400px; background-color:cornsilk; border-radius: 10px;">
+                            <img src="https://www.leguau.com/wp-content/uploads/2023/11/Perro-ESA.png" alt="Servicio 3">             
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #333;">[[#{plantilla.servicios.especializados}]]</h5>
+                                    <p class="card-text" style="color: #555;">[[#{plantilla.info.servicios.especializados}]]<a href="/reservacion/listado" style="color: #007bff; text-decoration: none;">[[#{plantilla.reservar.aqui}]]</a></p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 400px; background-color:cornsilk; border-radius: 10px;">
+                            <img src="https://d2yoo3qu6vrk5d.cloudfront.net/images/20220305193933/cropped-botiquin-para-perros-11.webp" alt="Servicio 3">                       
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #333;">[[#{plantilla.cuidados.casa}]]</h5>
+                                    <p class="card-text" style="color: #555;">[[#{plantilla.info.cuidados.casa}]]<a href="/reservacion/listado" style="color: #007bff; text-decoration: none;">[[#{plantilla.reservar.aqui}]]</a></p>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 400px; background-color:cornsilk; border-radius: 10px;">
+                            <img src="https://lh5.googleusercontent.com/proxy/k-PJDkXk49zJ_XFCxgwdr9IKaEuYLpxvuruOOOXgHH6cbNbejs_rDxwrhZUX7WpJjoGmSjdnG1R96mcIP1dsTHmt422l0p9ctncAHkSqz6zfpm2u2Yfoi7xMkCWl1eDHqJ6aRtaitbev-KWZwqD241F1QdvTfnT6EVFTAijY" alt="Servicio 3">
+
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #333;">[[#{plantilla.spa.mascotas}]]</h5>
+                                    <p class="card-text" style="color: #555;">[[#{plantilla.info.spa.mascota}]]<a href="/reservacion/listado" style="color: #007bff; text-decoration: none;">[[#{plantilla.reservar.aqui}]]</a></p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 400px; background-color:cornsilk; border-radius: 10px;">
+                            <img src="https://www.vidaxl.es/dw/image/v2/BFNS_PRD/on/demandware.static/-/Sites-vidaxl-catalog-master-sku/default/dwabdc0e4c/hi-res/1/2/6383/171068/image_1_171068.jpg?sw=400" alt="Servicio 3">
+
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #333;">[[#{plantilla.grooming.movil}]]</h5>
+                                    <p class="card-text" style="color: #555;">[[#{plantilla.info.aseo.movil}]]<a href="/reservacion/listado" style="color: #007bff; text-decoration: none;">[[#{plantilla.reservar.aqui}]]</a></p>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 400px; background-color:cornsilk; border-radius: 10px;">
+                            <img src="https://opticatoscana.com/wp-content/uploads/2019/12/Perrosygafas-miniatura-opt.jpg" alt="Servicio 3">
+
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #333;">[[#{plantilla.servicios.estilismo}]]</h5>
+                                    <p class="card-text" style="color: #555;">[[#{plantilla.info.servicios.estilismo}]]<a href="/reservacion/listado" style="color: #007bff; text-decoration: none;">[[#{plantilla.reservar.aqui}]]</a></p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 400px; background-color:cornsilk; border-radius: 10px;">
+                            <img src="https://katsmascotas.com/wp-content/uploads/2023/04/Mascotas-Sanas.jpg" alt="Servicio 3">
+
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #333;">[[#{plantilla.asesoramiento.nutricional}]]</h5>
+                                    <p class="card-text" style="color: #555;">[[#{plantilla.info.asesoramiento.nutricional}]]<a href="/reservacion/listado" style="color: #007bff; text-decoration: none;">[[#{plantilla.reservar.aqui}]]</a></p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+            <div>[[#{plantilla.Siguenos}]]</div>
+            <div>
+                <a href="#" style="color:blue; text-decoration: none; margin: 0 10px;">Facebook</a>
+                <a href="#" style="color:skyblue; text-decoration: none; margin: 0 10px;">Twitter</a>
+                <a href="#" style="color:#ff00cc; text-decoration: none; margin: 0 10px;">Instagram</a>
+                <a href="#" style="color:#ff9900; text-decoration: none; margin: 0 10px;">Reditt;)</a>
+            </div>
+            <br/>
+            <br/>
+
+            <div style="margin-top: 10px;">[[#{plantilla.contactanos1}]]</div>
+            <div>[[#{plantilla.contactanos2}]]</div>
+            <div>[[#{plantilla.contactanos3}]]</div>
+            <br/>
+            <br/>
+
+            <p class="lead text-center">
+                &COPY [[#{plantilla.derechos}]]
+            </p>
+        </footer>
+
+    </body>
+</html>

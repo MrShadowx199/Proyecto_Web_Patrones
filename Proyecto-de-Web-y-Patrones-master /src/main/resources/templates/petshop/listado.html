@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="layout/plantilla2 :: head">
+        <style>
+       
+    </style>
+    </head>
+    <body style="background-image: url('https://img.freepik.com/vector-premium/patron-lindo-cara-perro-bebe_65983-298.jpg?w=1480'); background-size: cover; background-position: center; background-repeat: no-repeat; font-family: Arial, sans-serif; color: #333;">
+
+        <header th:replace="layout/plantillaPetShop :: header"></header>
+        <section>
+            <div class="card" style="margin: 20px auto; box-shadow: 0 4px 8px rgba(0,0,0,0.2); width: 1000px; background-color: #fff; border-radius: 10px; padding: 20px;">
+                <h1 style="color:black;">[[#{plantilla.pet.shop}]]</h1>
+                <p style="color: black; font-size: 18px;">[[#{plantilla.info.petshop}]]</p>
+                
+            </div>
+        </section>
+
+        <!-- Carrusel de Productos 1 -->
+        <section>
+            <center><h5 style="color:red;">[[#{plantilla.alimentos.mascotas}]]</h5></center> 
+            <div class="container">
+                <div id="carouselExampleControls1" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 800px; background-color:cornsilk; border-radius: 10px;">
+                                <img src="https://lagranbodega.vteximg.com.br/arquivos/ids/297764-600-600/706460236125.jpg?v=638434654456730000" class="d-block w-100" alt="Producto 1">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 800px; background-color:cornsilk; border-radius: 10px;">
+                                <img src="https://cr.epaenlinea.com/media/catalog/product/8/d/8d5772e1-1ddc-4e3a-9116-96b9f769eff4.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=" class="d-block w-100" alt="Producto 2">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        
+                                       
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 800px; background-color:cornsilk; border-radius: 10px;">
+                                <img src="https://www.superpet.club/23186-large_default/nutribest-puppy-chicken-rice-cachorros-pollo-arroz-crecimiento-piel-pelo-saludable.jpg" class="d-block w-100" alt="Producto 3">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"style="filter: invert(1);"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"style="filter: invert(1);"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrusel de Productos 2 -->
+        <center><h5 style="color:violet;">[[#{plantilla.accesorios.y.juguetes}]] </h5></center> 
+        <section>
+            <div class="container">
+                <div id="carouselExampleControls2" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 800px; background-color:cornsilk; border-radius: 10px;">
+                                <img src="https://m.media-amazon.com/images/I/71dFSGDK+hL._AC_UF894,1000_QL80_.jpg" class="d-block w-100" alt="Producto 4">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 800px; background-color:cornsilk; border-radius: 10px;">
+                                <img src="https://m.media-amazon.com/images/I/61-kbkQKwJL._AC_UF1000,1000_QL80_.jpg" class="d-block w-100" alt="Producto 5">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 800px; background-color:cornsilk; border-radius: 10px;">
+                                <img src="https://m.media-amazon.com/images/I/71n02ps8pGL._AC_UF894,1000_QL80_.jpg" class="d-block w-100" alt="Producto 6">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"style="filter: invert(1);"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"style="filter: invert(1);"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Carrusel de Productos 3 -->
+        <center><h5 style="color:orange;">[[#{plantilla.productos.higiene}]]</h5></center> 
+        <section>
+            <div class="container">
+                <div id="carouselExampleControls3" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 800px; background-color:cornsilk; border-radius: 10px;">
+                                <img src="https://m.media-amazon.com/images/I/7112KhQQpKL.jpg" class="d-block w-100" alt="Producto 1">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 800px; background-color:cornsilk; border-radius: 10px;">
+                                <img src="https://m.media-amazon.com/images/I/61bhwIUQVLL.jpg" class="d-block w-100" alt="Producto 2">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        
+                                       
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 800px; background-color:cornsilk; border-radius: 10px;">
+                                <img src="https://maskoticascr.com/wp-content/uploads/2020/12/DENTAL-CARE2.png" class="d-block w-100" alt="Producto 3">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"style="filter: invert(1);"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"style="filter: invert(1);"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Carrusel de Productos 4 -->
+        <center><h5 style="color:#cccc00;">[[#{plantilla.accesorios.moda}]]</h5></center> 
+        <section>
+            <div class="container">
+                <div id="carouselExampleControls4" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 800px; background-color:cornsilk; border-radius: 10px;">
+                                <img src="https://cdn.pinkermoda.com/pinkermoda/2023/12/true-religion-mascotas.jpg" class="d-block w-100" alt="Producto 1">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 800px; background-color:cornsilk; border-radius: 10px;">
+                                <img src="https://bloximages.newyork1.vip.townnews.com/elvocero.com/content/tncms/assets/v3/editorial/8/7c/87caf79c-63cf-11ee-95df-cb2b9b6c459e/651f3aab2ab3d.image.jpg?crop=1175%2C1175%2C294%2C0&resize=1200%2C1200&order=crop%2Cresize" class="d-block w-100" alt="Producto 2">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        
+                                       
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 800px; background-color:cornsilk; border-radius: 10px;">
+                                <img src="https://media.istockphoto.com/id/1263537910/es/foto/bulldogs-franceses-vestidos-como-personajes-de-cuento-de-hadas-caperucita-roja-y-lobo-malo-con.jpg?s=612x612&w=0&k=20&c=D2iwiv5TfqbbuQZXQvMeWBuNVIKsb2JjW0TR0ZFgHIA=" class="d-block w-100" alt="Producto 3">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"style="filter: invert(1);"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"style="filter: invert(1);"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+            <div>[[#{plantilla.Siguenos}]]</div>
+            <div>
+                <a href="#" style="color:blue; text-decoration: none; margin: 0 10px;">Facebook</a>
+                <a href="#" style="color:skyblue; text-decoration: none; margin: 0 10px;">Twitter</a>
+                <a href="#" style="color:#ff00cc; text-decoration: none; margin: 0 10px;">Instagram</a>
+                <a href="#" style="color:#ff9900; text-decoration: none; margin: 0 10px;">Reditt;)</a>
+            </div>
+            <br/>
+            <br/>
+
+            <div style="margin-top: 10px;">[[#{plantilla.contactanos1}]]</div>
+            <div>[[#{plantilla.contactanos2}]]</div>
+            <div>[[#{plantilla.contactanos3}]]</div>
+            <br/>
+            <br/>
+
+            <p class="lead text-center">
+                &COPY [[#{plantilla.derechos}]]
+            </p>
+        </footer>
+
+    </body>
+</html>
