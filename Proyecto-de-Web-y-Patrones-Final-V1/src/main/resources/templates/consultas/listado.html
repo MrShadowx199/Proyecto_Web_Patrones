@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/plantilla2 :: head">
+</head>
+<body style="background-image: url('https://img.freepik.com/vector-premium/patron-lindo-cara-perro-bebe_65983-298.jpg?w=1480'); background-size: cover; background-position: center; background-repeat: no-repeat; font-family: Arial, sans-serif; color: #333;">
+<header th:replace="layout/plantilla2 :: header"></header>
+
+<!-- Sección de Servicio al Cliente -->
+<section id="servicio-cliente" class="section">
+    <div class="container">
+        <section>
+                <div class="card" style="margin: 20px auto; box-shadow: 0 4px 8px rgba(0,0,0,0.2); width: 1000px; background-color: cornsilk; border-radius: 10px; padding: 20px;">
+                    <h1 style="text-align: center; animation: changeColor 5s linear infinite;text-shadow: 2px 2px 4px #000000;">[[#{plantilla.servicioalcliente}]]</h1>
+                    <style>
+                        @keyframes changeColor {
+                            0% {
+                                color: rgb(255, 0, 0);
+                            }
+                            50% {
+                                color: rgb(0, 255, 0);
+                            }
+                            100% {
+                                color: rgb(0, 0, 255);
+                            }
+                        }
+                    </style>
+                    <p style="color: black; font-size: 18px;">[[#{plantilla.info.servicioalcliente}]]</p>
+                </div>
+            </section>
+        <div class="row">
+            <!--  Formulario de Contacto -->
+            <div class="col-md-4">
+                <div class="card" style="margin: 20px auto; box-shadow: 0 4px 8px rgba(0,0,0,0.2); width: 600px; background-color: cornsilk; border-radius: 10px; padding: 20px;">
+                    <h5 class="card-title">[[#{plantilla.formulario.contacto}]]<i class="fas fa-headset"></i></h5>
+                    <form id="formulario-contacto">
+                        <div class="form-group">
+                            <label for="nombre">[[#{plantilla.nombre}]]</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">[[#{plantilla.correo}]]</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">[[#{plantilla.mensaje}]]</label>
+                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">[[#{plantilla.enviar}]]</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <section>
+            <div class="container">
+                <div id="carouselExampleControls1" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 600px; background-color:cornsilk; border-radius: 10px;">
+                                <img src="https://wakyma.com/wakymavets/blog/wp-content/uploads/2017/02/Errores-a-la-hora-de-atender-a-un-cliente-en-tu-cli%CC%81nica-veterinaria1.jpg" class="d-block w-100" alt="Producto 1">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 600px; background-color:cornsilk; border-radius: 10px;">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-lpQu3acTrdXM-D-0rrEu0o3fbidtdI9-t9LcMraXGQ&s" class="d-block w-100" alt="Producto 2">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        
+                                       
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card" style="margin: 20px auto; box-shadow: 0 20px 8px rgba(0,0,0,0.2); width: 600px; background-color:cornsilk; border-radius: 10px;">
+                                <img src="https://www.cimformacion.com/blog/wp-content/uploads/2017/05/veterinaria-atendiendo-perro-min.jpg" class="d-block w-100" alt="Producto 3">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"style="filter: invert(1);"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"style="filter: invert(1);"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+<!-- Footer -->
+<footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+    <div>[[#{plantilla.Siguenos}]]</div>
+    <div>
+        <a href="#" style="color:blue; text-decoration: none; margin: 0 10px; ">Facebook</a>
+        <a href="#" style="color:skyblue; text-decoration: none; margin: 0 10px;">Twitter</a>
+        <a href="#" style="color:#ff00cc; text-decoration: none; margin: 0 10px;">Instagram</a>
+        <a href="#" style="color:#ff9900; text-decoration: none; margin: 0 10px;">Reditt;)</a>
+    </div>
+    <br/>
+    <br/>
+
+    <div style="margin-top: 10px;">[[#{plantilla.contactanos1}]]</div>
+    <div>[[#{plantilla.contactanos2}]]</div>
+    <div>[[#{plantilla.contactanos3}]]</div>
+    <br/>
+    <br/>
+
+    <p class="lead text-center">
+        &COPY [[#{plantilla.derechos}]]
+    </p>
+</footer>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("SN7iOpV3Q7o_W-Jbv");
+    })();
+    
+    document.getElementById("formulario-contacto").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evitar que el formulario se envíe normalmente
+        
+        // Recuperar los datos del formulario
+        var nombre = document.getElementById("nombre").value;
+        var email = document.getElementById("email").value;
+        var mensaje = document.getElementById("mensaje").value;
+        
+        // Enviar el correo electrónico
+        emailjs.send("service_2cs0w6e", "template_6kdt9ro", {
+            nombre: nombre,
+            email: email,
+            mensaje: mensaje
+        })
+        .then(function(response) {
+            alert("¡El mensaje se ha enviado correctamente!");
+        }, function(error) {
+            console.error("Hubo un error al enviar el mensaje:", error);
+            alert("Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.");
+        });
+    });
+</script>
+
+</body>
+</html>

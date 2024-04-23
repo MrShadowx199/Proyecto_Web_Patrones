@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"       
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="layout/plantilla2 :: head">
+    </head>
+    <body style="background-image: url('https://img.freepik.com/vector-premium/patron-lindo-cara-perro-bebe_65983-298.jpg?w=1480'); background-size: cover; background-position: center; background-repeat: no-repeat; font-family: Arial, sans-serif; color: #333;">
+        <header th:replace="layout/plantilla2 :: header"></header>
+
+        <section th:replace="mascotas/fragmentos :: botonesAgregar"/>
+        <section th:replace="mascotas/fragmentos :: listadoMascotas"/>  
+        <section th:replace="mascotas/fragmentos :: agregarMascota"/>
+        <section th:replace="mascotas/fragmentos :: filtrosBuscarPorNombre"></section> 
+
+
+
+      <!-- Footer -->
+        <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+            <div>[[#{plantilla.Siguenos}]]</div>
+            <div>
+                <a href="#" style="color:blue; text-decoration: none; margin: 0 10px; ">Facebook</a>
+                <a href="#" style="color:skyblue; text-decoration: none; margin: 0 10px;">Twitter</a>
+                <a href="#" style="color:#ff00cc; text-decoration: none; margin: 0 10px;">Instagram</a>
+                <a href="#" style="color:#ff9900; text-decoration: none; margin: 0 10px;">Reditt;)</a>
+            </div>
+            <br/>
+            <br/>
+
+            <div style="margin-top: 10px;">[[#{plantilla.contactanos1}]]</div>
+            <div>[[#{plantilla.contactanos2}]]</div>
+            <div>[[#{plantilla.contactanos3}]]</div>
+            <br/>
+            <br/>
+
+            <p class="lead text-center">
+                &COPY [[#{plantilla.derechos}]]
+            </p>
+        </footer>
+    </body>
+</html>

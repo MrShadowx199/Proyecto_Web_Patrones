@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="layout/plantilla2::head"></head>
+    <body style="background-image: url('https://img.freepik.com/vector-premium/patron-lindo-cara-perro-bebe_65983-298.jpg?w=1480'); background-size: cover; background-position: center; background-repeat: no-repeat; font-family: Arial, sans-serif; color: #333;">
+        <header th:replace="layout/plantilla2::header"></header>
+        
+        
+          <section>
+                <div class="card" style="margin: 20px auto; box-shadow: 0 4px 8px rgba(0,0,0,0.2); width: 1000px; background-color: cornsilk; border-radius: 10px; padding: 20px;">
+                    <h1 style="text-align: center; animation: changeColor 5s linear infinite;text-shadow: 2px 2px 4px #000000;">[[#{plantilla.confirmacion.pago}]] 💳</h1>
+                    <style>
+                        @keyframes changeColor {
+                            0% {
+                                color: rgb(255, 0, 0);
+                            }
+                            50% {
+                                color: rgb(0, 255, 0);
+                            }
+                            100% {
+                                color: rgb(0, 0, 255);
+                            }
+                        }
+                    </style>
+                    <p style="color: black; font-size: 18px;">[[#{plantilla.info.confirmacion.pago}]]</p>
+                    
+                </div>
+            </section>
+
+        <section>
+            <div class="card" style="margin: 20px auto; width: 600px; background-color: cornsilk; border-radius: 10px; padding: 20px; text-align: center;">
+                <form th:action="@{/productos/comprar}"th:object="${pago}" method="POST" class="was-validated" enctype="multipart/form-data">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="numeroTarjeta" th:text="#{pago.numeroTarjeta}">Número de Tarjeta</label>
+                            <input type="number" class="form-control" name="numeroTarjeta" required="true"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fechaExp" th:text="#{pago.fechaExp}">Fecha de Expiración</label>
+                            <input type="date" class="form-control" name="fechaExp" required="true"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="codigoSeguridad" th:text="#{pago.codigoSeguridad}">Código de Seguridad</label>
+                            <input type="number" class="form-control" name="codigoSeguridad" required="true"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="titular" th:text="#{pago.titular}">Titular de la Tarjeta</label>
+                            <input type="text" class="form-control" name="titular" required="true"/>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="/productos/confirmacion" class="btn btn-primary" th:text="#{accion.comprar}">Comprar</a>
+
+                    </div>
+                </form>
+            </div>
+            </div>
+            </div>
+
+
+
+    
+                </form>
+                </div>
+        </section>
+
+        <footer th:replace="layout/plantilla2::footer"></footer>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/plantilla2 :: head"></head>
+<body style="background-image: url('https://img.freepik.com/vector-premium/patron-lindo-cara-perro-bebe_65983-298.jpg?w=1480'); background-size: cover; background-position: center; background-repeat: no-repeat; font-family: Arial, sans-serif; color: #333;">
+    <header th:replace="layout/plantilla2 :: header"></header>
+
+    <div style="margin: 20px;">
+        <section>
+            <div class="card" style="margin: 0 auto; width: 600px; background-color: cornsilk; border-radius: 10px; padding: 20px; text-align: center;">
+                <h1 style="animation: changeColor 5s linear infinite; text-shadow: 2px 2px 4px #000000;">[[#{plantilla.reservacion.titulo}]]🐾</h1>
+                <style>
+                    @keyframes changeColor {
+                        0% {
+                            color: rgb(255, 0, 0);
+                        }
+                        50% {
+                            color: rgb(0, 255, 0);
+                        }
+                        100% {
+                            color: rgb(0, 0, 255);
+                        }
+                    }
+                </style>
+                <p>[[#{plantilla.info.reservacion}]]</p>
+            </div>
+        </section>
+        <section>
+            <div class="card" style="margin: 20px auto; width: 600px; background-color: cornsilk; border-radius: 10px; padding: 20px; text-align: center;">
+                <form action="/reservacion/confirmacion" method="POST">
+                    <label for="nombre_cliente">[[#{reservacion.nombre.cliente}]]</label><br>
+                    <input type="text" id="nombre_cliente" name="nombre_cliente" required><br><br>
+
+                    <label for="nombre_mascota">[[#{reservacion.mascota.nombre}]]</label><br>
+                    <input type="text" id="nombre_mascota" name="nombre_mascota" required><br><br>
+
+                    <label for="fecha">[[#{reservacion.fecha}]]</label><br>
+                    <input type="date" id="fecha" name="fecha" required><br><br>
+
+                    <label for="hora">[[#{reservacion.hora}]]</label><br>
+                    <input type="time" id="hora" name="hora" required><br><br>
+
+                    <label for="descripcion">[[#{reservacion.descripcion}]]</label><br>
+                    <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br><br>
+
+                    <a href="/reservacion/confirmacion" class="btn btn-primary" th:text="#{accion.comprar}">Comprar</a>
+                    <br/>
+                    <br/>
+                        <p>[[#{plantilla.reservacion.agradecimiento}]]</p>
+                        <a href="/index" style="color: #007bff; text-decoration: none;">[[#{plantilla.reservacion.inicio}]]</a>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+        <div>[[#{plantilla.Siguenos}]]</div>
+        <div>
+            <a href="#" style="color:blue; text-decoration: none; margin: 0 10px;">Facebook</a>
+            <a href="#" style="color:skyblue; text-decoration: none; margin: 0 10px;">Twitter</a>
+            <a href="#" style="color:#ff00cc; text-decoration: none; margin: 0 10px;">Instagram</a>
+            <a href="#" style="color:#ff9900; text-decoration: none; margin: 0 10px;">Reditt;)</a>
+        </div>
+        <br/>
+        <br/>
+
+        <div style="margin-top: 10px;">[[#{plantilla.contactanos1}]]</div>
+        <div>[[#{plantilla.contactanos2}]]</div>
+        <div>[[#{plantilla.contactanos3}]]</div>
+        <br/>
+        <br/>
+
+        <p class="lead text-center">
+            &COPY [[#{plantilla.derechos}]]
+        </p>
+    </footer>
+</body>
+</html>
